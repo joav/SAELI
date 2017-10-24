@@ -1,0 +1,20 @@
+{
+  "name": "saeli",
+  "version": "1.0.0",
+  "description": "Aplicación de escritorio del proyecto S.A.E.L.I.",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "Lectura",
+    "Multimedia Educativa",
+    "Ingeniería en Multimedia",
+    "Etapa alfabética",
+    "NFC",
+    "Bluetooth",
+    "Silabas"
+  ],
+  "author": "Jimmy Acero",
+  "license": "ISC"
+}
