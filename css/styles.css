@@ -5,6 +5,7 @@ body{
 	text-align: center;
 	font-size: 25px; 
 	font-family: sans-serif;
+	border: 1px solid black;
 }
 .button{
 	color: white;
@@ -41,4 +42,31 @@ body{
 }
 a{
 	text-decoration: none;
+}
+header{
+	display: flex;
+	flex-direction: row;
+	width: 90%;
+	justify-content: space-between;
+	margin: auto;
+	margin-top: 10px;	
+}
+.menu{
+	border-radius: 5px;
+	border: 1px solid #7F7F7F;
+}
+ul{
+	list-style: none;
+	padding: 0px;
+}
+.menu a{
+	color: black;
+}
+.button.m{
+	font-size: 0.8em;
+	width: 75px;
+    height: 30px;
+}
+.button.m a{
+	top:5px;
 }
