@@ -28,7 +28,11 @@
   },
   "repository": "https://github.com/joav/SAELI",
   "dependencies": {
-    "jquery": "^3.2.1"
+    "bluetooth-serial-port": "^2.1.5",
+    "jquery": "^3.2.1",
+    "noble": "^1.8.1",
+    "node-bluetooth": "^1.2.0",
+    "usb": "^1.2.0"
   },
   "devDependencies": {
     "electron": "^1.7.9",
