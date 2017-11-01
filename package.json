@@ -17,7 +17,10 @@
     "Bluetooth",
     "Silabas"
   ],
-  "author": "Jimmy Acero",
+  "author": {
+    "name": "Jimmy Acero",
+    "email": "jim.acero.valcarcel@gmail.com"
+  },
   "license": "MIT",
   "build": {
     "appId": "SAELI-app",
@@ -28,6 +31,7 @@
   },
   "repository": "https://github.com/joav/SAELI",
   "dependencies": {
+    "bluetooth-serial-port": "^2.1.5",
     "jquery": "^3.2.1"
   },
   "devDependencies": {
