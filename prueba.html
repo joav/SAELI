@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Titulo falso</title>
+</head>
+<body>
+	<input type="text" id="sil">
+	<input type="text" id="pal">
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		var sil=[];
+		var pal=[];
+		function containSil(pal,sil){
+			var find=[];
+			for (var i = 0; i < pal.length; i++) {
+				find.push(sil.indexOf(pal[i].toLowerCase()));
+			}
+			return find;
+		}
+		function findPal(pal,newpal){
+			for (var i = pal.length - 1; i >= 0; i--) {
+				if(pal.palabra==newpal){
+					return true;
+				}
+			};
+			return false;
+		}
+		$("#sil").on('keyup', function (e) {
+			if (e.keyCode == 13) {
+				var newsil=$('#sil').val();
+				$('#sil').val('');
+				if(sil.indexOf(newsil)<0){
+					sil.push(newsil);
+				}
+			}
+		});
+		$("#pal").on('keyup', function (e) {
+			if (e.keyCode == 13) {
+				var newpal=$('#pal').val();
+				newpal=newpal.split('-');
+				$('#pal').val('');
+				if(!findPal(pal,newpal)){
+					pal.push({palabra:newpal.join(''),silabas:containSil(newpal,sil)});
+					console.log({palabra:newpal.join(''),silabas:containSil(newpal,sil)});
+				}
+			}
+		});
+
+	</script>
+</body>
+</html>

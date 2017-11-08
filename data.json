@@ -1,0 +1,328 @@
+{
+	"silabas": [
+		"ca",
+		"sa",
+		"rro",
+		"ba",
+		"lón",
+		"hue",
+		"vo",
+		"pe",
+		"ga",
+		"to",
+		"ma",
+		"má",
+		"pa",
+		"pá",
+		"lla",
+		"ve",
+		"la",
+		"si",
+		"puer",
+		"ta",
+		"fre",
+		"fas",
+		"ni",
+		"ño",
+		"par",
+		"que",
+		"ár",
+		"bol",
+		"so",
+		"me",
+		"su",
+		"ra",
+		"co",
+		"ci",
+		"na",
+		"ven",
+		"bom",
+		"bi",
+		"llo",
+		"lle",
+		"te",
+		"lon",
+		"che"
+	],
+	"palabras": [
+		{
+			"palabra": "Casa",
+			"chronos": 9,
+			"silabas": [
+				0,
+				1
+			],
+			"active": false
+		},
+		{
+			"palabra": "Carro",
+			"chronos": 5,
+			"silabas": [
+				0,
+				2
+			],
+			"active": false
+		},
+		{
+			"palabra": "Balón",
+			"chronos": 2,
+			"silabas": [
+				3,
+				4
+			],
+			"active": false
+		},
+		{
+			"palabra": "Huevo",
+			"chronos": 3,
+			"silabas": [
+				5,
+				6
+			],
+			"active": false
+		},
+		{
+			"palabra": "Perro",
+			"chronos": 7,
+			"silabas": [
+				7,
+				2
+			],
+			"active": false
+		},
+		{
+			"palabra": "Gato",
+			"chronos": 8,
+			"silabas": [
+				8,
+				9
+			],
+			"active": false
+		},
+		{
+			"palabra": "Mamá",
+			"chronos": 1,
+			"silabas": [
+				10,
+				11
+			],
+			"active": false
+		},
+		{
+			"palabra": "Papá",
+			"chronos": 1,
+			"silabas": [
+				12,
+				13
+			],
+			"active": false
+		},
+		{
+			"palabra": "Llave",
+			"chronos": 4,
+			"silabas": [
+				14,
+				15
+			],
+			"active": false
+		},
+		{
+			"palabra": "Cama",
+			"chronos": 4,
+			"silabas": [
+				0,
+				10
+			],
+			"active": false
+		},
+		{
+			"palabra": "Sala",
+			"chronos": 9,
+			"silabas": [
+				1,
+				16
+			],
+			"active": false
+		},
+		{
+			"palabra": "Silla",
+			"chronos": 2,
+			"silabas": [
+				17,
+				14
+			],
+			"active": false
+		},
+		{
+			"palabra": "Puerta",
+			"chronos": 7,
+			"silabas": [
+				18,
+				19
+			],
+			"active": false
+		},
+		{
+			"palabra": "Fresa",
+			"chronos": 3,
+			"silabas": [
+				20,
+				1
+			],
+			"active": false
+		},
+		{
+			"palabra": "Gafas",
+			"chronos": 2,
+			"silabas": [
+				8,
+				21
+			],
+			"active": false
+		},
+		{
+			"palabra": "Niño",
+			"chronos": 1,
+			"silabas": [
+				22,
+				23
+			],
+			"active": false
+		},
+		{
+			"palabra": "Parque",
+			"chronos": 8,
+			"silabas": [
+				24,
+				25
+			],
+			"active": false
+		},
+		{
+			"palabra": "Árbol",
+			"chronos": 8,
+			"silabas": [
+				26,
+				27
+			],
+			"active": false
+		},
+		{
+			"palabra": "Hueso",
+			"chronos": 9,
+			"silabas": [
+				5,
+				28
+			],
+			"active": false
+		},
+		{
+			"palabra": "Bolsa",
+			"chronos": 6,
+			"silabas": [
+				27,
+				1
+			],
+			"active": false
+		},
+		{
+			"palabra": "Mesa",
+			"chronos": 3,
+			"silabas": [
+				29,
+				1
+			],
+			"active": false
+		},
+		{
+			"palabra": "Basura",
+			"chronos": 5,
+			"silabas": [
+				3,
+				30,
+				31
+			],
+			"active": false
+		},
+		{
+			"palabra": "Cocina",
+			"chronos": 4,
+			"silabas": [
+				32,
+				33,
+				34
+			],
+			"active": false
+		},
+		{
+			"palabra": "Ventana",
+			"chronos": 5,
+			"silabas": [
+				35,
+				19,
+				34
+			],
+			"active": false
+		},
+		{
+			"palabra": "Bombillo",
+			"chronos": 7,
+			"silabas": [
+				36,
+				37,
+				38
+			],
+			"active": false
+		},
+		{
+			"palabra": "Billete",
+			"chronos": 6,
+			"silabas": [
+				37,
+				39,
+				40
+			],
+			"active": false
+		},
+		{
+			"palabra": "Lonchera",
+			"chronos": 6,
+			"silabas": [
+				41,
+				42,
+				31
+			],
+			"active": false
+		}
+	],
+	"current_chronos": 1,
+	"chronos": [
+		{
+			"max": 2
+		},
+		{
+			"max": 2
+		},
+		{
+			"max": 2
+		},
+		{
+			"max": 3
+		},
+		{
+			"max": 3
+		},
+		{
+			"max": 3
+		},
+		{
+			"max": 3
+		},
+		{
+			"max": 2
+		},
+		{
+			"max": 2
+		}
+	]
+}

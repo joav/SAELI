@@ -32,7 +32,9 @@
   "repository": "https://github.com/joav/SAELI",
   "dependencies": {
     "bluetooth-serial-port": "^2.1.5",
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "load-json-file": "^4.0.0",
+    "write-json-file": "^2.3.0"
   },
   "devDependencies": {
     "electron": "^1.7.9",
