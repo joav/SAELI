@@ -1,5 +1,6 @@
 const electron = require('electron')
 const {app, BrowserWindow} = electron
+const fs = require('fs');
 const path = require('path')
 const url = require('url')
 const loadJsonFile = require('load-json-file')
@@ -7,9 +8,18 @@ const writeJsonFile = require('write-json-file')
 
 let win
 let data
+let palabra
 
 exports.readData = () => {
 	return data
+}
+
+exports.setPalabra = index => {
+	palabra = index
+}
+
+exports.getPalabra = () => {
+	return palabra
 }
 
 exports.writeData = newData => {
@@ -17,7 +27,7 @@ exports.writeData = newData => {
 }
 
 function saveData() {
-	writeJsonFile.sync('data.json',data)
+	writeJsonFile.sync('./data/data.json',data)
 	console.log('Guardado')
 }
 
@@ -29,8 +39,22 @@ function createWindow(argument) {
 		slashes:true
 	}))
 	win.on('close', saveData)
-	loadJsonFile('data.json').then(json => {
-		data=json
+	fs.open('./data/data.json','r',(err,fd)=>{
+		if(err){
+			fs.readFile(path.join(__dirname, 'data/data.json'),'utf8',(err,d)=>{
+				if(err){
+					console.error('WTF!!!!')
+				}else{
+					data=JSON.parse(d)
+					saveData()
+				}
+			})
+		}else{
+			loadJsonFile('./data/data.json').then(json => {
+				data=json
+				fs.close(fd)
+			})
+		}
 	})
 }
 

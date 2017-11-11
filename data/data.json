@@ -52,7 +52,7 @@
 				0,
 				1
 			],
-			"active": false
+			"found": false
 		},
 		{
 			"palabra": "Carro",
@@ -61,7 +61,7 @@
 				0,
 				2
 			],
-			"active": false
+			"found": false
 		},
 		{
 			"palabra": "Balón",
@@ -70,7 +70,7 @@
 				3,
 				4
 			],
-			"active": false
+			"found": false
 		},
 		{
 			"palabra": "Huevo",
@@ -79,7 +79,7 @@
 				5,
 				6
 			],
-			"active": false
+			"found": false
 		},
 		{
 			"palabra": "Perro",
@@ -88,7 +88,7 @@
 				7,
 				2
 			],
-			"active": false
+			"found": false
 		},
 		{
 			"palabra": "Gato",
@@ -97,7 +97,7 @@
 				8,
 				9
 			],
-			"active": false
+			"found": false
 		},
 		{
 			"palabra": "Mamá",
@@ -106,7 +106,7 @@
 				10,
 				11
 			],
-			"active": false
+			"found": false
 		},
 		{
 			"palabra": "Papá",
@@ -115,7 +115,7 @@
 				12,
 				13
 			],
-			"active": false
+			"found": false
 		},
 		{
 			"palabra": "Llave",
@@ -124,7 +124,7 @@
 				14,
 				15
 			],
-			"active": false
+			"found": false
 		},
 		{
 			"palabra": "Cama",
@@ -133,7 +133,7 @@
 				0,
 				10
 			],
-			"active": false
+			"found": false
 		},
 		{
 			"palabra": "Sala",
@@ -142,7 +142,7 @@
 				1,
 				16
 			],
-			"active": false
+			"found": false
 		},
 		{
 			"palabra": "Silla",
@@ -151,7 +151,7 @@
 				17,
 				14
 			],
-			"active": false
+			"found": false
 		},
 		{
 			"palabra": "Puerta",
@@ -160,7 +160,7 @@
 				18,
 				19
 			],
-			"active": false
+			"found": false
 		},
 		{
 			"palabra": "Fresa",
@@ -169,7 +169,7 @@
 				20,
 				1
 			],
-			"active": false
+			"found": false
 		},
 		{
 			"palabra": "Gafas",
@@ -178,7 +178,7 @@
 				8,
 				21
 			],
-			"active": false
+			"found": false
 		},
 		{
 			"palabra": "Niño",
@@ -187,7 +187,7 @@
 				22,
 				23
 			],
-			"active": false
+			"found": false
 		},
 		{
 			"palabra": "Parque",
@@ -196,7 +196,7 @@
 				24,
 				25
 			],
-			"active": false
+			"found": false
 		},
 		{
 			"palabra": "Árbol",
@@ -205,7 +205,7 @@
 				26,
 				27
 			],
-			"active": false
+			"found": false
 		},
 		{
 			"palabra": "Hueso",
@@ -214,7 +214,7 @@
 				5,
 				28
 			],
-			"active": false
+			"found": false
 		},
 		{
 			"palabra": "Bolsa",
@@ -223,7 +223,7 @@
 				27,
 				1
 			],
-			"active": false
+			"found": false
 		},
 		{
 			"palabra": "Mesa",
@@ -232,7 +232,7 @@
 				29,
 				1
 			],
-			"active": false
+			"found": false
 		},
 		{
 			"palabra": "Basura",
@@ -242,7 +242,7 @@
 				30,
 				31
 			],
-			"active": false
+			"found": false
 		},
 		{
 			"palabra": "Cocina",
@@ -252,7 +252,7 @@
 				33,
 				34
 			],
-			"active": false
+			"found": false
 		},
 		{
 			"palabra": "Ventana",
@@ -262,7 +262,7 @@
 				19,
 				34
 			],
-			"active": false
+			"found": false
 		},
 		{
 			"palabra": "Bombillo",
@@ -272,7 +272,7 @@
 				37,
 				38
 			],
-			"active": false
+			"found": false
 		},
 		{
 			"palabra": "Billete",
@@ -282,7 +282,7 @@
 				39,
 				40
 			],
-			"active": false
+			"found": false
 		},
 		{
 			"palabra": "Lonchera",
@@ -292,7 +292,7 @@
 				42,
 				31
 			],
-			"active": false
+			"found": false
 		}
 	],
 	"current_chronos": 1,

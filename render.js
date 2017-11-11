@@ -34,16 +34,44 @@ $(document).ready(function(){
 		var count=$('.tableta').data('count');
 		var silaba=$(e.target);
 		silaba=silaba.hasClass('span_sil')?silaba.parent():silaba;
+		if(window.palFound===undefined){
+			window.palFound=[];
+		}
+		var selSil=silaba.find('.span_sil').eq(0).html();
 		if(silaba.parent().hasClass('disponibles')){
+			palFound.push(selSil);
 			if(count<max_sil){
 				$('.tableta').data('count',count+1);
 				$('.tableta').append(silaba);
 			}
+			let {found,index}=isFound(currPal,sil,palFound);
+			if(found){
+				var palabra=palFound.join('');
+				if(currPal[index].palabra.toLowerCase()==palabra){
+					$(window).trigger('found_pal');
+				}
+				else{
+					$(window).trigger('order_pal');
+				}
+			}else{
+				if(count+1==max_sil){
+					$(window).trigger('not_found_pal');
+				}
+			}
 		}else{
+			var index=palFound.indexOf(selSil);
+			palFound.splice(index,1);
 			$('.tableta').data('count',count-1);
 			$('.disponibles').append(silaba);
 		}
 	});
+	
+	var palFoundH2=$('.palFound');
+	if(palFoundH2.length){
+		var palabra=pal[main.getPalabra()];
+		var silabas=selectSil(palabra.silabas,sil);
+		palFoundH2.html(silabas.join('-'));
+	}
 
 //var btSerial = new (require('bluetooth-serial-port')).BluetoothSerialPort();
 // btSerial.on('found', function(address, name) {
