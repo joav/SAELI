@@ -52,7 +52,10 @@
 				0,
 				1
 			],
-			"found": false
+			"found": false,
+			"video": "videos/casa.mp4",
+			"audio": "audios/casa.wav",
+			"img": "img/casa.png"
 		},
 		{
 			"palabra": "Carro",
@@ -61,7 +64,10 @@
 				0,
 				2
 			],
-			"found": false
+			"found": false,
+			"video": "videos/carro.mp4",
+			"audio": "audios/carro.wav",
+			"img": "img/carro.png"
 		},
 		{
 			"palabra": "Balón",
@@ -70,7 +76,10 @@
 				3,
 				4
 			],
-			"found": false
+			"found": false,
+			"video": "videos/balon.mp4",
+			"audio": "audios/balon.wav",
+			"img": "img/balon.png"
 		},
 		{
 			"palabra": "Huevo",
@@ -79,7 +88,10 @@
 				5,
 				6
 			],
-			"found": false
+			"found": false,
+			"video": "videos/huevo.mp4",
+			"audio": "audios/huevo.wav",
+			"img": "img/huevo.png"
 		},
 		{
 			"palabra": "Perro",
@@ -88,7 +100,10 @@
 				7,
 				2
 			],
-			"found": false
+			"found": false,
+			"video": "videos/perro.mp4",
+			"audio": "audios/perro.wav",
+			"img": "img/perro.png"
 		},
 		{
 			"palabra": "Gato",
@@ -97,7 +112,10 @@
 				8,
 				9
 			],
-			"found": false
+			"found": false,
+			"video": "videos/gato.mp4",
+			"audio": "audios/gato.wav",
+			"img": "img/gato.png"
 		},
 		{
 			"palabra": "Mamá",
@@ -106,7 +124,10 @@
 				10,
 				11
 			],
-			"found": false
+			"found": false,
+			"video": "videos/mama.mp4",
+			"audio": "audios/mama.wav",
+			"img": "img/mama.png"
 		},
 		{
 			"palabra": "Papá",
@@ -115,7 +136,10 @@
 				12,
 				13
 			],
-			"found": false
+			"found": false,
+			"video": "videos/papa.mp4",
+			"audio": "audios/papa.wav",
+			"img": "img/papa.png"
 		},
 		{
 			"palabra": "Llave",
@@ -124,7 +148,10 @@
 				14,
 				15
 			],
-			"found": false
+			"found": false,
+			"video": "videos/llave.mp4",
+			"audio": "audios/llave.wav",
+			"img": "img/llave.png"
 		},
 		{
 			"palabra": "Cama",
@@ -133,7 +160,10 @@
 				0,
 				10
 			],
-			"found": false
+			"found": false,
+			"video": "videos/cama.mp4",
+			"audio": "audios/cama.wav",
+			"img": "img/cama.png"
 		},
 		{
 			"palabra": "Sala",
@@ -142,7 +172,10 @@
 				1,
 				16
 			],
-			"found": false
+			"found": false,
+			"video": "videos/sala.mp4",
+			"audio": "audios/sala.wav",
+			"img": "img/sala.png"
 		},
 		{
 			"palabra": "Silla",
@@ -151,7 +184,10 @@
 				17,
 				14
 			],
-			"found": false
+			"found": false,
+			"video": "videos/silla.mp4",
+			"audio": "audios/silla.wav",
+			"img": "img/silla.png"
 		},
 		{
 			"palabra": "Puerta",
@@ -160,7 +196,10 @@
 				18,
 				19
 			],
-			"found": false
+			"found": false,
+			"video": "videos/puerta.mp4",
+			"audio": "audios/puerta.wav",
+			"img": "img/puerta.png"
 		},
 		{
 			"palabra": "Fresa",
@@ -169,7 +208,10 @@
 				20,
 				1
 			],
-			"found": false
+			"found": false,
+			"video": "videos/fresa.mp4",
+			"audio": "audios/fresa.wav",
+			"img": "img/fresa.png"
 		},
 		{
 			"palabra": "Gafas",
@@ -178,7 +220,10 @@
 				8,
 				21
 			],
-			"found": false
+			"found": false,
+			"video": "videos/gafas.mp4",
+			"audio": "audios/gafas.wav",
+			"img": "img/gafas.png"
 		},
 		{
 			"palabra": "Niño",
@@ -187,7 +232,10 @@
 				22,
 				23
 			],
-			"found": false
+			"found": false,
+			"video": "videos/nino.mp4",
+			"audio": "audios/nino.wav",
+			"img": "img/nino.png"
 		},
 		{
 			"palabra": "Parque",
@@ -196,7 +244,10 @@
 				24,
 				25
 			],
-			"found": false
+			"found": false,
+			"video": "videos/parque.mp4",
+			"audio": "audios/parque.wav",
+			"img": "img/parque.png"
 		},
 		{
 			"palabra": "Árbol",
@@ -205,7 +256,10 @@
 				26,
 				27
 			],
-			"found": false
+			"found": false,
+			"video": "videos/arbol.mp4",
+			"audio": "audios/arbol.wav",
+			"img": "img/arbol.png"
 		},
 		{
 			"palabra": "Hueso",
@@ -214,7 +268,10 @@
 				5,
 				28
 			],
-			"found": false
+			"found": false,
+			"video": "videos/hueso.mp4",
+			"audio": "audios/hueso.wav",
+			"img": "img/hueso.png"
 		},
 		{
 			"palabra": "Bolsa",
@@ -223,7 +280,10 @@
 				27,
 				1
 			],
-			"found": false
+			"found": false,
+			"video": "videos/bolsa.mp4",
+			"audio": "audios/bolsa.wav",
+			"img": "img/bolsa.png"
 		},
 		{
 			"palabra": "Mesa",
@@ -232,7 +292,10 @@
 				29,
 				1
 			],
-			"found": false
+			"found": false,
+			"video": "videos/mesa.mp4",
+			"audio": "audios/mesa.wav",
+			"img": "img/mesa.png"
 		},
 		{
 			"palabra": "Basura",
@@ -242,7 +305,10 @@
 				30,
 				31
 			],
-			"found": false
+			"found": false,
+			"video": "videos/basura.mp4",
+			"audio": "audios/basura.wav",
+			"img": "img/basura.png"
 		},
 		{
 			"palabra": "Cocina",
@@ -252,7 +318,10 @@
 				33,
 				34
 			],
-			"found": false
+			"found": false,
+			"video": "videos/cocina.mp4",
+			"audio": "audios/cocina.wav",
+			"img": "img/cocina.png"
 		},
 		{
 			"palabra": "Ventana",
@@ -262,7 +331,10 @@
 				19,
 				34
 			],
-			"found": false
+			"found": false,
+			"video": "videos/ventana.mp4",
+			"audio": "audios/ventana.wav",
+			"img": "img/ventana.png"
 		},
 		{
 			"palabra": "Bombillo",
@@ -272,7 +344,10 @@
 				37,
 				38
 			],
-			"found": false
+			"found": false,
+			"video": "videos/bombillo.mp4",
+			"audio": "audios/bombillo.wav",
+			"img": "img/bombillo.png"
 		},
 		{
 			"palabra": "Billete",
@@ -282,7 +357,10 @@
 				39,
 				40
 			],
-			"found": false
+			"found": false,
+			"video": "videos/billete.mp4",
+			"audio": "audios/billete.wav",
+			"img": "img/billete.png"
 		},
 		{
 			"palabra": "Lonchera",
@@ -292,10 +370,14 @@
 				42,
 				31
 			],
-			"found": false
+			"found": false,
+			"video": "videos/lonchera.mp4",
+			"audio": "audios/lonchera.wav",
+			"img": "img/lonchera.png"
 		}
 	],
 	"current_chronos": 1,
+	"max_chronos": 4,
 	"chronos": [
 		{
 			"max": 2

@@ -8,12 +8,24 @@
 <body>
 	<header>
 		<div id="btnMenu" class="button m"><a href="">Menu</a></div>
+		<audio id="audioFeliz">
+			<source src="audios/palabraarmada.wav">
+		</audio>
+		<audio id="audioOrden">
+			<source src="audios/orden.wav">
+		</audio>
+		<audio id="audioNEn">
+			<source src="audios/noencontrada.wav">
+		</audio>
+		<audio id="armada">
+			<source src="">
+		</audio>
 		<div class="menu dispNon">
 			<ul>
 				<li><a href="standby.html">-  Armar palabra</a></li>
 				<li><a href="list_founded.html">-  Palabras encontradas</a></li>
 				<li><a href="history.html">-  Historia</a></li>
-				<li><a href="about.html">-  Créditos</a></li>
+				<li><a id="reset" href="index.html">-  Reiniciar</a></li>
 			</ul>
 		</div>
 	</header>
@@ -23,7 +35,9 @@
 		<div class="tableta" data-count=0></div>
 	</section>
 	<footer>S.A.E.L.I.</footer>
+	<script> var page='standby' </script>
 	<script src="render.js">//require('./render.js')</script>
+	<script>main.setChronos(1)</script>
 	<script src="js/functions.js"></script>
 </body>
 </html>

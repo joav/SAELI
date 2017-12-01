@@ -13,20 +13,23 @@
 				<li><a href="standby.html">-  Armar palabra</a></li>
 				<li><a href="list_founded.html">-  Palabras encontradas</a></li>
 				<li><a href="history.html">-  Historia</a></li>
-				<li><a href="about.html">-  Créditos</a></li>
+				<li><a id="reset" href="index.html">-  Reiniciar</a></li>
 			</ul>
 		</div>
 		<div class="audioButton">
-			<img src="img/voice.svg" alt="" width="20" height="20">
-			<audio id="audioFeedback" src=""></audio>
+			<img src="img/megaphone.svg" alt="" width="40" height="40">
+			<audio id="audioPalabra">
+				<source src="">
+			</audio>
 		</div>
 	</header>
 	<section>
 		<h2>Pa-la-bra</h2>
-		<video src=""></video>
-		<div class="button b"><a href="">Continuar</a></div>
+		<video src="" width="610" height="340" autoplay controls></video><br>
+		<div class="button b"><a id="continueRep" href="standby.html">Continuar</a></div>
 	</section>
 	<footer>S.A.E.L.I.</footer>
+	<script> var page='play' </script>
 	<script src="render.js">//require('./render.js')</script>
 	<script src="js/functions.js"></script>
 </body>

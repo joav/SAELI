@@ -20,6 +20,7 @@ $(document).ready(function(){
 	chronos=data.chronos
 	current_chronos=data.current_chronos
 	max_sil=chronos[current_chronos-1].max
+	max_chronos=data.max_chronos
 	
 	var disp=$('.disponibles');
 	if (disp.length) {
@@ -29,6 +30,13 @@ $(document).ready(function(){
 			addSil(currSil[i]);
 		}
 	}
+	
+	$('#reset').click((e)=>{
+		current_chronos=1
+		for (var i = pal.length - 1; i >= 0; i--) {
+			pal[i].found=false
+		}
+	})
 
 	$('.silaba').click(function(e){
 		var count=$('.tableta').data('count');
@@ -69,10 +77,68 @@ $(document).ready(function(){
 	var palFoundH2=$('.palFound');
 	if(palFoundH2.length){
 		var palabra=pal[main.getPalabra()];
+		$('#armada').attr('src',palabra.audio);
+		$('#audioBusca,#audioFichaEn').on('ended',()=>{
+			$('#armada')[0].play();
+		});
 		var silabas=selectSil(palabra.silabas,sil);
 		palFoundH2.html(silabas.join('-'));
 	}
-
+	
+	$('#contiue_founded').click((e)=>{
+		e.preventDefault();
+		var encontrada=pal[main.getPalabra()];
+		$('section img').attr('src',encontrada.img);
+		$('#audioFichaEn')[0].play();
+		$('#armada').on('ended',()=>{
+			pal[main.getPalabra()].found=true;
+			current_chronos=current_chronos+1;
+			if(current_chronos>max_chronos){
+				current_chronos=1;
+			}
+			location.href='play.html';
+		});
+	});
+	$('.audioButton').click((e)=>{
+		e.preventDefault();
+		if($('#audioPalabra').length){
+			$('#audioPalabra')[0].play();
+		}
+		if($('#armada').length){
+			$('#armada')[0].play();
+		}
+	})
+	if($('#audioPalabra').length){
+		var palabraRep=pal[main.getPalabra()];
+		$('#audioPalabra').attr('src',palabraRep.audio);
+		var deletreo=sil[palabraRep.silabas[0]].charAt(0).toUpperCase() + sil[palabraRep.silabas[0]].slice(1);
+		for (var i = 1; i < palabraRep.silabas.length; i++) {
+			deletreo+='-'+sil[palabraRep.silabas[i]];
+		}
+		$('section h2').html(deletreo);
+		$('section video').attr('src',palabraRep.video);
+		if(lastPage=='history'){
+			$('#continueRep').attr('href','history.html')
+			$('#continueRep').click((e)=>{
+				chronos_history++;
+				if(chronos_history>maxChronosFound()){
+					chronos_history=1
+				}
+				main.setChronos(chronos_history)
+			})
+		}
+		if(lastPage=='list_founded'){
+			$('#continueRep').attr('href','list_founded.html')
+		}
+	}
+	if($('.ficha').length){
+		var tam=page=='history'?'b':'m';
+		var palabras=page=='history'?getPalChronos():getPalFounded();
+		$('.list').html('');
+		for (var i = 0; i < palabras.length; i++) {
+			addPal(palabras[i],tam)
+		}
+	}
 //var btSerial = new (require('bluetooth-serial-port')).BluetoothSerialPort();
 // btSerial.on('found', function(address, name) {
 // 	console.log(address,name);
@@ -130,10 +196,10 @@ $(document).ready(function(){
 });
 
 window.onbeforeunload = function(e) {
-	main.writeData({silabas:sil,palabras:pal,current_chronos:current_chronos,chronos:chronos})
+	main.writeData({silabas:sil,palabras:pal,current_chronos:current_chronos,max_chronos:max_chronos,chronos:chronos})
 };
 window.onclose = function(e){
-	main.writeData({silabas:sil,palabras:pal,current_chronos:current_chronos,chronos:chronos})
+	main.writeData({silabas:sil,palabras:pal,current_chronos:current_chronos,max_chronos:max_chronos,chronos:chronos})
 }
 
 let sil=[]
@@ -142,3 +208,7 @@ let currPal=[]
 let currSil=[]
 let current_chronos=0
 let chronos=[]
+let max_chronos=0
+let lastPage=main.getLastPage()
+main.setLastPage(page)
+let chronos_history=main.getChronos()

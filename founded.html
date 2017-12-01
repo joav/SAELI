@@ -13,22 +13,32 @@
 				<li><a href="standby.html">-  Armar palabra</a></li>
 				<li><a href="list_founded.html">-  Palabras encontradas</a></li>
 				<li><a href="history.html">-  Historia</a></li>
-				<li><a href="about.html">-  Créditos</a></li>
+				<li><a id="reset" href="index.html">-  Reiniciar</a></li>
 			</ul>
 		</div>
 		<div class="audioButton">
-			<img src="img/test.jpg" alt="" width="20" height="20">
-			<audio id="audioFeedback" src=""></audio>
+			<img src="img/megaphone.svg" alt="" width="40" height="40">
+			<audio id="audioBusca" autoplay>
+				<source src="audios/buscaficha.wav">
+			</audio>
+			<audio id="audioFichaEn">
+				<source src="audios/fichaencontrada.wav">
+			</audio>
+			<audio id="armada">
+				<source src="">
+			</audio>
 		</div>
 	</header>
 	<h2>Palabra encontrada</h2>
 	<section>
-		<img src="img/bloqueo.jpg" alt="" width="200" height="200">
+		<img src="img/find.svg" alt="" width="200" height="200">
 		<h2 class="palFound">Pa-la-bra</h2>
-		<div class="button b"><a href="">Continuar</a></div>
+		<div class="button b"><a href="javascript:;" id="contiue_founded">Continuar</a></div>
 	</section>
 	<footer>S.A.E.L.I.</footer>
+	<script> var page='founded' </script>
 	<script src="render.js">//require('./render.js')</script>
+	<script>main.setChronos(1)</script>
 	<script src="js/functions.js"></script>
 </body>
 </html>

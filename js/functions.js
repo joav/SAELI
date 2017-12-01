@@ -67,19 +67,74 @@ function indexPal(palFound){
 		return false;
 	}
 }
+function getPalChronos() {
+	var palabras=[];
+	for (var i = 0; i < pal.length; i++) {
+		if(pal[i].chronos==chronos_history&&pal[i].found){
+			var palabra=pal[i];
+			palabra.index=i;
+			palabras.push(palabra);
+		}
+	}
+	return palabras;
+}
+function getPalFounded() {
+	var palabras=[];
+	for (var i = 0; i < pal.length; i++) {
+		if(pal[i].found){
+			var palabra=pal[i];
+			palabra.index=i;
+			palabras.push(palabra);
+		}
+	}
+	palabras.sort(orderChronos)
+	return palabras;
+}
+function addPal(palabra,tam) {
+	var list=$('.list');
+	var silabas=selectSil(palabra.silabas,sil);
+	var ficha=$('<div class="ficha '+tam+'">');
+	list.append(ficha);
+	ficha.append('<img src="'+palabra.img+'" alt="">');
+	ficha.append('<div><span class="textBox">'+palabra.palabra);
+	var divSilabas=$('<div>');
+	ficha.append(divSilabas);
+	for (var i = 0; i < silabas.length; i++) {
+		divSilabas.append('<span class="textBox">'+silabas[i]);
+	}
+	var a=$('<a href="play.html">');
+	ficha.append(a);
+	a.click((e)=>{
+		main.setPalabra(palabra.index);
+	});
+}
+function orderChronos(a,b){
+	if(a.chronos==b.chronos) return 0;
+	return a.chronos-b.chronos;
+}
+function maxChronosFound() {
+	var palabras=getPalFounded();
+	return palabras[palabras.length-1].chronos;
+}
 $(window).on('order_pal',function(e){
-	alert('orden');
+	$('#audioOrden')[0].play();
 })
 $(window).on('found_pal',function(e){
-	alert('Encontrada');
+	$('#audioFeliz').on('ended',()=>{
+		$('#armada')[0].play();
+		$('#armada').on('ended',()=>{
+			location.href='./founded.html';
+		})
+	})
 	var index=indexPal(palFound);
 	if(index!==false){
+		$('#armada').attr('src',pal[index].audio);
+		$('#audioFeliz')[0].play();
 		main.setPalabra(index);
-		location.href='./founded.html';
 	}else{
 		alert('ha ocurrido un error');
 	}
 })
 $(window).on('not_found_pal',function(e){
-	alert('No en contrada');
+	$('#audioNEn')[0].play();
 })

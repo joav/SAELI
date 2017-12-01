@@ -9,6 +9,8 @@ const writeJsonFile = require('write-json-file')
 let win
 let data
 let palabra
+let lastPage='index'
+let chronos_history=1
 
 exports.readData = () => {
 	return data
@@ -24,6 +26,22 @@ exports.getPalabra = () => {
 
 exports.writeData = newData => {
 	data=newData
+}
+
+exports.setLastPage = page => {
+	lastPage=page
+}
+
+exports.getLastPage = () => {
+	return lastPage
+}
+
+exports.setChronos = chronos => {
+	chronos_history=chronos
+}
+
+exports.getChronos = () => {
+	return chronos_history
 }
 
 function saveData() {
