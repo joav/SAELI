@@ -131,7 +131,7 @@ $(document).ready(function(){
 			$('#continueRep').attr('href','list_founded.html')
 		}
 	}
-	if($('.ficha').length){
+	if($('.list').length){
 		var tam=page=='history'?'b':'m';
 		var palabras=page=='history'?getPalChronos():getPalFounded();
 		$('.list').html('');

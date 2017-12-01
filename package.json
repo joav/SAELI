@@ -26,7 +26,8 @@
     "appId": "SAELI-app",
     "asar": true,
     "win": {
-      "target": "NSIS"
+      "target": "NSIS",
+      "icon":"build/icon.ico"
     }
   },
   "repository": "https://github.com/joav/SAELI",
